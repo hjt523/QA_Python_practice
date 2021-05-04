@@ -62,5 +62,26 @@ b = input("string2 : ")
 print(near(a,b))
 
 '''
+#Task QA practice, timestables
+#  Formatting is ugly, further work could be adaptive spacing.
+'''
+def timestables(num):
+    length = num
+    for i in range(1,num + 1):
+        rowstring = ''
+        for j in range(1, num + 1):
+            ij =i*j
+            if(ij < 10):
+                rowstring = rowstring + '  '+ str(ij)
+            else:
+                rowstring = rowstring + ' ' + str(ij)
 
+        print(rowstring)
 
+    return 'done!'
+
+num = int( input("Input a number to get the timestables of:" ))
+
+print(timestables(num))
+
+'''
