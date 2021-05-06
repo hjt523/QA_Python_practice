@@ -16,6 +16,6 @@
 
 def endsPy(inputword):
 	word = inputword.lower()
-	print(F"Does {word} end with py? :")
+	print(F"Does {word} end with py? :") #Optional
 	return word.endswith('py')
 
